@@ -33,6 +33,8 @@ with open('monnitTest.csv', 'rb') as csvfile:
 
 	except csv.Error as err:
 		client.close()
+		csv.close()
 		sys.exit('file %s, line %d: %s' % (csvfile, reader.line_num, err))
 
 	client.close()
+	csv.close()
