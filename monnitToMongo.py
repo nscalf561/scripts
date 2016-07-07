@@ -36,7 +36,7 @@ with open('monnitTest.csv', 'rb') as csvfile:
 		csvfile.close()
 		sys.exit('file %s, line %d: %s' % (csvfile, reader.line_num, err))
 
-
+	client.close()
 	csvfile.close()
 
 # Data used to test this
