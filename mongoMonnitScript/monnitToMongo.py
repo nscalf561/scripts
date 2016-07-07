@@ -33,6 +33,15 @@ with open('monnitTest.csv', 'rb') as csvfile:
 
 	except csv.Error as err:
 		client.close()
+		csvfile.close()
 		sys.exit('file %s, line %d: %s' % (csvfile, reader.line_num, err))
 
 	client.close()
+	csvfile.close()
+
+# Data used to test this
+# Monnit,MNG-9-EG (Ethernet),104556,IN,EthernetGateway; Sensor Code - IMLHNT
+# Monnit,MNG-10-EG (Ethernet),104557,IN,EthernetGateway; Sensor Code - ASDFGD
+# Monnit,MNG-11-EG (Ethernet),104558,IN,EthernetGateway; Sensor Code - QWERGA
+# Monnit,MNG-12-EG (Ethernet),104559,IN,EthernetGateway; Sensor Code - IOJHNM
+# Monnit,MNG-13-EG (Ethernet),104560,IN,EthernetGateway; Sensor Code - QWEPRI
