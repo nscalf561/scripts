@@ -40,9 +40,3 @@ with open('Monnit_Order_to_Add_to_Ebla_Batch_1.csv', 'rb') as csvfile:
 	client.close()
 	csvfile.close()
 
-# Data used to test this
-# Monnit,MNG-9-EG (Ethernet),104556,IN,EthernetGateway; Sensor Code - IMLHNT
-# Monnit,MNG-10-EG (Ethernet),104557,IN,EthernetGateway; Sensor Code - ASDFGD
-# Monnit,MNG-11-EG (Ethernet),104558,IN,EthernetGateway; Sensor Code - QWERGA
-# Monnit,MNG-12-EG (Ethernet),104559,IN,EthernetGateway; Sensor Code - IOJHNM
-# Monnit,MNG-13-EG (Ethernet),104560,IN,EthernetGateway; Sensor Code - QWEPRI
