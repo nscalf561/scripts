@@ -8,15 +8,16 @@ client = MongoClient("127.0.0.1", port = 27017)
 db = client.script_test
 
 # csv file to pull data from 
-with open('monnitTest.csv', 'rb') as csvfile:
+with open('Monnit_Order_to_Add_to_Ebla_Batch_1.csv', 'rb') as csvfile:
 
 	reader = csv.reader(csvfile)
+	next(reader)	#skip line that has headers
 	try: 
 		for row in reader:
 			brand = row[0]
 			model = row[1]
 			serial_number = row[2]
-			status = row[3]
+			status = 'IN'
 			notes = row[4]
 
 			# this should be the collection you want to insert into 
